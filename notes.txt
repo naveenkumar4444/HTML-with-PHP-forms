@@ -1,0 +1,1 @@
+create two folders cvs and photos in the same project
