@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         About uploading files
+      </title>
+   </head>
+   <body>
+      <h1>Application for GGC jobs</h1>
+      <p>Please fill in the information</p>
+      <form action="data.php" method="post" enctype="multipart/form-data">
+         <table border=1>
+            <tr>
+               <td align=right>Name:</td>
+               <td><input type="text" name="name" value=""></td>
+            </tr>
+            <tr>
+               <td align=right>Email:</td>
+               <td><input type="email" name="email" value=""></td>
+            </tr>
+            <tr>
+               <td align=right>Highest Education Degree:</td>
+               <td>
+                  <select name="education">
+                     <option value="Doctor" >Doctor</option>
+                     <option value="Master" >Master</option>
+                     <option value="College" >College</option>
+                     <option value="High School" >High School</option>
+                  </select>
+                  <br/><br/>
+               </td>
+            </tr>
+            <tr>
+               <td align=right>Position Applied:</td>
+               <td>
+                  <select name="position">
+                     <option value="IT Help Desk Technician" >IT Help Desk Technician</option>
+                     <option value="Fron Desk Receptionist" >Fron Desk Receptionist</option>
+                     <option value="Janitor" >Janitor</option>
+                     <option value="PHP Web Programmer" >PHP Web Programmer</option>
+                  </select>
+                  <br/><br/>
+               </td>
+            </tr>
+            <tr>
+               <td align=right>CV (PDF only):</td>
+               <td><input type="file" name="cv"></td>
+            </tr>
+            <tr>
+               <td align=right>Photo (PNG/JPG/GIF):</td>
+               <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+               <td><input type="submit" name="submit" value="Submit"></td>
+               <td><input type="reset" name="reset"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
